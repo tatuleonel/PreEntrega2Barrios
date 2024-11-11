@@ -11,7 +11,7 @@ body {
 }
 .main-autos .section-ofertas{
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: auto;
     grid-template-areas: 
     "titulo titulo titulo"
     "parrafo parrafo parrafo"
@@ -19,6 +19,7 @@ body {
     "auto4 auto5 auto6"
     ;
     gap: 10px;
+    justify-items: center;
 }
 .main-autos .section-ofertas h2{
     grid-area: titulo;
@@ -46,6 +47,9 @@ body {
     grid-area: auto6;
 }
 
+.cardauts .img-auts{
+    height: 70%;
+}
 .container{
     width: 100%;
     padding: 0;
@@ -199,6 +203,7 @@ header{
 }
 
 h1, h2, h3, h4 {
+    color: white;
     font-family: "Farsan";
     padding: 10px;
     text-align: center;
@@ -224,7 +229,7 @@ section {
     border-radius: 20px;
 }
 p {
-    background-color: #d2dfe9;
+    color: wheat;
     font-size: large;
     font-family: sans-serif;
     padding: 5px;
@@ -311,10 +316,13 @@ footer {
 
 footer .footer-icono {
     display: flex;
-    align-items: flex-end;
-    border: #2e788a5b 2px solid;
-    width: 100%;
-}
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+        }
+
 footer h4 {
     margin: 0 10px;
 }
@@ -331,9 +339,19 @@ section{
     bottom: 15px;
     right: 5px;
 }
+.Nav-autos .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+}
 
 @media (max-width: 600px) {
-
+    .Nav-autos .card-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
     .header__nav {
         flex-direction: column;
         height: auto;
@@ -344,6 +362,14 @@ section{
         display: block;
         text-align: center;
     }
+
+    .card1, .card2, .card3, .card4, .card5, .card6 {
+                width: 100%; 
+                margin-bottom: 15px;
+            }
+            .card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img {
+                width: 100%;
+            }
 
     .header__item {
         margin: 10px 0;
@@ -359,8 +385,18 @@ section{
         padding: 10px;
     }
     .card-container {
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-content: center;
         width: 100%;
+    }
+    .img-auts{
+        width: 100%;
+        height: auto;
+    }
+    .card-body{
+        padding: 10px;
     }
 
     .card {
@@ -400,22 +436,21 @@ section{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .header__nav {
         flex-direction: column;
         height: auto;
         text-align: center;
     }
-
+    
     .header__logo img {
-        max-width: 80%;
-        /* Ajusta el tamaño del logo */
+        max-width: 30%;
         height: auto;
     }
     .main-autos .section-ofertas {
-    display: block;
-    width: 100%;
-    padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 10px;
     }
     .header__menu {
         display: block;
@@ -434,14 +469,12 @@ section{
     .card-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* Dos columnas para dispositivos de tamaño medio */
         gap: 20px;
         justify-items: center;
     }
 
     .card {
         width: 90%;
-        /* Reducir el tamaño de las tarjetas */
         margin: 10px auto;
     }
 
@@ -473,7 +506,6 @@ section{
 
     .section h2 {
         font-size: 1.8rem;
-        /* Ajusta el tamaño del título */
     }
 
     .contacto {
