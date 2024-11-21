@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50em;
+    margin: 0 auto;
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    transition: all 1.1s;
+  }
+ video:hover{
+    transform: scale(1.1);
+ }
+
+.section-ofertas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;  
+    margin: 20px;  
+}
+
+.section-ofertas section {
+    background-color: #f5f5f5;  
+    border-radius: 10px;  
+    width: 280px;  
+    padding: 15px; 
+    text-align: center;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s ease;  
+}
+
+
+.section-ofertas section:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.section-ofertas img {
+    width: 100%;  
+    height: auto;  
+    border-radius: 10px; 
+}
+
+.section-ofertas button {
+    background-color: #6c757d;  
+    color: rgb(83, 30, 228);  
+    padding: 10px 20px;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+
+.section-ofertas button:hover {
+    background-color: #5a6268; 
+}
+
+
+.cardauts .img-auts{
+    height: 70%;
+}
+.container{
+    width: 100%;
+    padding: 0;
+}
+.header{
+    padding: 10px;
+    background: linear-gradient(to top, rgb(230, 233, 237), rgb(29, 29, 114) );
+    width: 100%;
+    padding: 10px 0;
+}
+
+
+.header__nav {
+    width: 90%;
+    height: 90px;
+    background-color: #c0b9ac77;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo img{
+    max-width: 100%;
+    height: 90px;
+}
+.header__logo:hover{
+    transform: scale(1.2, 1.2);
+}
+
+.header__menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.header__link {
+    color: black;
+    text-decoration: none;
+    padding: 0.7rem;
+}
+
+.header__link:hover {
+    background-color: #0000002d;
+    color: rgb(224, 195, 141);
+    border-radius: 20px;
+}
+
+.navbar {
+    width: 100%;
+    padding: 0;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.contacto{
+    background-color: #c71515;
+    padding: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+.contacto-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.h2-b{
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.p-2 {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.campo{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.campo label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-submit:hover {
+    background-color: #45a049;
+}
+.img-wsp {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    color: white;
+    font-family: "Farsan";
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h4 {
+    padding: 0;
+}
+
+section {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    margin-top: 8px;
+}
+
+p {
+    color: wheat;
+    font-size: large;
+    font-family: sans-serif;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.car-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main div img {
+    height: auto;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    margin: 10px;
+    display: inline-block;
+}
+
+.footer-icono a img {
+    transition: all 0.3s ease;
+  }
+  
+  .footer-icono a:hover img {
+    opacity: 0.7;
+  }
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #54bbd450;
+    border: #216074 2px solid;
+    padding: 60px 0;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    flex: 1 1 18rem;
+    margin: 10px;
+    max-width: 18rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
+
+footer .footer-icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+}
+ 
+.btn-flotante {
+    border-radius: 5px;
+    padding: 18px 30px;
+    position:fixed;
+    bottom: 25px;
+    right: 15px;
+    z-index: 9999;
+}
+.Nav-autos .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .Nav-autos .card-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .header__nav {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .header__menu {
+        display: block;
+        text-align: center;
+    }
+
+    .card1, .card2, .card3, .card4, .card5, .card6 {
+                width: 100%; 
+                margin-bottom: 15px;
+            }
+            .card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img {
+                width: 100%;
+            }
+
+    .header__item {
+        margin: 10px 0;
+    }
+
+    .header__link {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    .main-autos .section-ofertas {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+    .img-auts{
+        width: 100%;
+        height: auto;
+    }
+    .card-body{
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-icono {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-icono img {
+        margin-bottom: 10px;
+    }
+
+    .btn-flotante {
+        padding: 12px 20px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .Nav-autos {
+        display: block;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .card {
+        margin: 10px auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-ofertas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .section-ofertas {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__nav {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    
+    .header__logo img {
+        max-width: 30%;
+        height: auto;
+    }
+    .main-autos .section-ofertas {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 10px;
+    }
+    .header__menu {
+        display: block;
+        text-align: center;
+    }
+
+    .header__item {
+        margin: 10px 0;
+    }
+
+    .header__link {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-icono {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-icono img {
+        margin-bottom: 10px;
+    }
+
+    .btn-flotante {
+        padding: 15px 25px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .Nav-autos {
+        display: block;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .contacto {
+        padding: 30px;
+        margin-top: 40px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,186 @@
+@media (max-width: 600px) {
+    .Nav-autos .card-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .header__nav {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .header__menu {
+        display: block;
+        text-align: center;
+    }
+
+    .card1, .card2, .card3, .card4, .card5, .card6 {
+                margin-bottom: 15px;
+            }
+            .card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img {
+                width: 100%;
+            }
+
+    .header__item {
+        margin: 10px 0;
+    }
+
+    .header__link {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    .section-ofertas {
+        flex-direction: column;  // Aplica columnas en pantallas más pequeñas
+        align-items: center;  // Centra las tarjetas
+    }
+
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+    .img-auts{
+        width: 100%;
+        height: auto;
+    }
+    .card-body{
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-icono {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-icono img {
+        margin-bottom: 10px;
+    }
+
+    .btn-flotante {
+        padding: 12px 20px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .Nav-autos {
+        display: block;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .card {
+        margin: 10px auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .section-ofertas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-ofertas section,
+    .card1, .card2, .card3, .card4, .card5, .card6 {
+        width: 100%;
+        max-width: 350px;
+}
+}
+
+@media (max-width: 1000px) {
+    .header__nav {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    
+    .header__logo img {
+        max-width: 30%;
+        height: auto;
+    }
+    .main-autos .section-ofertas {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 10px;
+    }
+    .header__menu {
+        display: block;
+        text-align: center;
+    }
+
+    .header__item {
+        margin: 10px 0;
+    }
+
+    .header__link {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .btn{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .card-title{
+        font-size: 1.1rem;
+    }
+    .card-img-top {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-icono {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-icono img {
+        margin-bottom: 10px;
+    }
+
+    .btn-flotante {
+        padding: 15px 25px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .Nav-autos {
+        display: block;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .contacto {
+        padding: 30px;
+        margin-top: 40px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}

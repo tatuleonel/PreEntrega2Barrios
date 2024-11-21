@@ -1,0 +1,69 @@
+$color_oscuro: #000000;
+$color_claro: #dddad3;
+$color-campo:#aca2a200;
+$green:#45a049;
+$gris:#666;
+
+
+
+.contacto{
+    padding: 50px;
+    margin-top: 50px;
+    text-align: center;
+    .contacto-container{
+        max-width: 600px;
+        margin: 0 auto;
+        .h2-b{
+            color: $color_claro;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .p-2{
+            color: $gris;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .formulario-contacto{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .campo{
+                width: 100%;
+                margin-bottom: 15px;
+                font-size: 1.1em;
+                color: $gris;
+                margin-bottom: 5px;
+                display: block;
+            }
+            .campo{
+                padding: 10px;
+                font-size: 1em;
+                border: 1px solid $color-campo;
+                border-radius: 5px;
+                resize: vertical;
+            }
+            .campo textarea {
+                width: 100%;
+                padding: 10px;
+                font-size: 1em;
+                border: 1px solid $color_claro;
+                border-radius: 5px;
+                resize: vertical;
+            }
+        }
+        .btn-submit{
+            background-color: $green;
+            color: $color_claro;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            &:hover{
+                background-color: $green;
+            }
+        }
+    }
+        
+}

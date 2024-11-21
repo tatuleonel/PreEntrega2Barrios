@@ -9,14 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Farsan&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
     <title>Venta de autos</title>
 </head>
 
 <body class="contenedor">
     <!--contenido de la página-->
 <header class="header">
-    <h1 class="header__titulo"></h1>
+    <h1></h1>
     <nav class="header__nav">
         <div class="header__logo">
             <img class="rounded-3" src="../img/logoautos.png" alt="logo-marca" >
@@ -39,38 +39,42 @@
             </li>
         </ul>
     </nav>
-    <section class="contacto">
+    <a href="" class="btn-flotante"><img class="img-wsp" src="../img/whatsapp-icon.png" alt="enlace a whatsapp"></a>
+    <nav class="navbar navbar-expand-lg bg-secondary rounded-3">
+</header>
+<section class="contacto">
         <div class="contacto-container">
-            <h2 class="h2-b">Contacto</h2>
-            <p class="p-2">¿Tienes alguna pregunta? ¡Estamos aquí para ayudarte!</p>
+            <h1 class="h2-b">Contacto</h1>
+            <p class="p-2 text-light">¿Tienes alguna pregunta? ¡Estamos aquí para ayudarte!</p>
     
             <!-- Formulario de contacto -->
             <form action="#" method="post" class="formulario-contacto">
                 <div class="campo">
-                    <label for="nombre">Nombre</label>
+                    <label class="text-white" for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
                 </div>
                 <div class="campo">
-                    <label for="email">Correo electrónico</label>
+                    <label class="text-white" for="email">Correo electrónico</label>
                     <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
                 </div>
                 <div class="campo">
-                    <label for="mensaje">Mensaje</label>
+                    <label class="text-white" for="mensaje">Mensaje</label>
                     <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
                 </div>
                 <button type="submit" class="btn-submit">Enviar</button>
             </form>
         </div>
-    </section>
-    <a href="" class="btn-flotante"><img class="img-wsp" src="../img/whatsapp-icon.png" alt="enlace a whatsapp"></a>
-    <nav class="navbar navbar-expand-lg bg-secondary rounded-3">
-</header>
-    <footer class="footer-icono">
-        <h4>Mail 📩 @ventadeautos.com</h4>
-        <h4>Teléfono 📞00000555</h4>
-        <img class="iconofooter rounded-5" src="../img/facebook.png" alt="facebook" width="50px">
-        <img class="iconofooter rounded-5" src="../img/instagram.png" alt="Instagram" width="50px">
-    </footer>
+</section>
+<footer class="footer-icono">
+    <h4>📧 Dfossatti@hotmail.com </h4>
+    <h4>📞3447414625</h4>
+    <a href="https://www.facebook.com/d.fossatti.multimarcas" target="_blank">
+      <img class="iconofooter rounded-5 m-2" src="../img/facebook.png" alt="facebook" width="50px">
+    </a>
+    <a href="https://www.instagram.com/dfossattimultimarcas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+      <img class="iconofooter rounded-5" src="../img/instagram.png" alt="Instagram" width="50px">
+    </a>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
