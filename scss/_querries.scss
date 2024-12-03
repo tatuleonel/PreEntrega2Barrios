@@ -30,8 +30,9 @@
         font-size: 1.2rem;
     }
     .section-ofertas {
-        flex-direction: column;  // Aplica columnas en pantallas más pequeñas
-        align-items: center;  // Centra las tarjetas
+        display: flex;
+        flex-direction: column;  
+        align-items: center; 
     }
 
 
@@ -98,7 +99,12 @@
         width: 100%;
         max-width: 350px;
 }
+    .map-container {
+        padding-bottom: 50%; 
+        max-width: 90%; 
+    }
 }
+
 
 @media (max-width: 1000px) {
     .header__nav {
@@ -113,7 +119,6 @@
     }
     .main-autos .section-ofertas {
         grid-template-columns: repeat(2, 1fr);
-        width: 100%;
         padding: 10px;
     }
     .header__menu {

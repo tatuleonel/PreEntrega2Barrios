@@ -3,8 +3,22 @@ $color_claro: #dddad3;
 $color-campo:#aca2a200;
 $green:#45a049;
 $gris:#666;
+@use "sass:color";
 
-
+@mixin button-estilo ($background-color, $text-color) {
+    background-color: $background-color;
+    color: $text-color;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+        background-color: color.adjust($color_oscuro, $lightness: -10%);
+    }
+  }
 
 .contacto{
     padding: 50px;
@@ -52,18 +66,8 @@ $gris:#666;
             }
         }
         .btn-submit{
-            background-color: $green;
-            color: $color_claro;
-            border: none;
-            padding: 12px 20px;
-            font-size: 1.2em;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            &:hover{
-                background-color: $green;
+                @include button-estilo($green, $color_claro);
+              }
             }
         }
-    }
         
-}

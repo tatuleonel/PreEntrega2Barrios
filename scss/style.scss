@@ -1,15 +1,45 @@
 @use "inicio";
-@use "nosotros";
 @use "contacto";
 @use "ubicacion";
 @use "ofertas";
 @use "querries";
 
-h1, h2, h3, h4 {
+@mixin input-estilo {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+  }
+  
+  @mixin button-estilo ($background-color, $text-color) {
+    background-color: $background-color;
+    color: $text-color;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: darken($background-color, 10%);
+    }
+  }
+  
+  @mixin heading-estilo {
     color: white;
     font-family: "Farsan";
     padding: 10px;
     text-align: center;
+  }
+
+$footer-color:#54bad450;
+$negro: #333;
+$input-claro:#cccccc;
+
+h1, h2, h3, h4 {
+    @include heading-estilo;
 }
 
 img {
@@ -34,8 +64,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #54bbd450;
-    border: #216074 2px solid;
+    background-color: $footer-color;
+    border: $footer-color 2px solid;
     padding: 60px 0;
     width: 80%;
     margin: 20px auto;
@@ -43,15 +73,11 @@ footer {
 }
 label {
     font-size: 1.1em;
-    color: #333;
+    color: $negro;
     margin-bottom: 5px;
     display: block;
 }
 
 input {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    @include input-estilo;
 }

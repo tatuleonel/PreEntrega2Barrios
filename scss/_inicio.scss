@@ -2,13 +2,32 @@ $color_oscuro:#000000;
 $color_claro:#c0b9ac;
 $azul:#007bff;
 $gris:#c0b9ac77;
-
+$color-negro2: #0000003f;
+@use "sass:color";
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+  @mixin button-estilo ($background-color, $text-color) {
+    background-color: $background-color;
+    color: $text-color;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    &:hover {
+        background-color: color.adjust($color_oscuro, $lightness: -10%);
+    }
+  }
+  
+body {
+    width: 100%;
+}
 .contenedor {
     overflow-x: hidden;
     width: 100%;
@@ -17,12 +36,12 @@ $gris:#c0b9ac77;
 }
     .header {
     padding: 10px;
-    background: linear-gradient(to top, rgb(230, 233, 237), rgb(29, 29, 114) );
+    background: linear-gradient(to top, #e6e9ed, #1d1d72 );
     width: 100%;
     padding: 10px 0;
         .header__titulo{
         text-align: center;
-        color: white;
+        color: $color_claro;
         font-family: "Farsan";
         padding: 10px;
         text-align: center;
@@ -56,17 +75,9 @@ $gris:#c0b9ac77;
                 display: inline-block;
                 }
                     .header__link {
-                        color: $color_oscuro;
-                        text-decoration: none;
-                        padding: 0.7rem;
-                        &:hover {
-                            background-color: $color_oscuro;
-                            color:$color_claro;
-                            border-radius: 20px;
+                        @include button-estilo ($color-negro2, $color_claro)
                         }
                     }
-            }
-
 
 .btn-flotante {
             border-radius: 5px;
@@ -120,7 +131,7 @@ $gris:#c0b9ac77;
                 width: 100%;
                 height: auto;
                 object-fit: cover;
-                border-bottom: 2px solid #ddd;
+                border-bottom: 2px solid $color_claro;
                 .card-img-top {
                     object-fit: cover;
                     aspect-ratio: 16 / 9;
@@ -143,7 +154,7 @@ $gris:#c0b9ac77;
                         transition: all 0.3s ease;
                         &:hover{
                             opacity: 0.7;
-                            background-color: #0056b3;
+                            background-color: $azul;
                         }
                     }
                 }
@@ -153,7 +164,7 @@ $gris:#c0b9ac77;
                 max-width: 18rem;
                 border-radius: 8px;
                 background-color: $color_claro;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 4px 15px $color_oscuro;
                 transition: transform 0.2s;
                 overflow: hidden;
                 &:hover {
